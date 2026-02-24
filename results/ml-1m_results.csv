@@ -1,0 +1,16 @@
+experiment,model,dataset,hparams,params,val_ndcg@10,val_hr@10,test_ndcg@10,test_hr@10,epochs,time_min
+sasrec,sasrec,ml-1m,d=64 blk=2 heads=1,331584,0.239241,0.437086,0.240072,0.437417,132,5.93
+bert4rec,bert4rec,ml-1m,d=64 blk=2 heads=2,335065,0.237771,0.430464,0.237368,0.434437,132,5.54
+sasrec,sasrec,ml-1m,d=64 blk=2 heads=1,331584,0.046100,0.102152,0.047826,0.106954,12,0.47
+bert4rec,bert4rec,ml-1m,d=64 blk=2 heads=2,335065,0.237771,0.430464,0.237368,0.434437,132,4.53
+mamba4rec,mamba4rec,ml-1m,d=64 blk=2 state=16 expand=2,299200,0.233273,0.427980,0.241170,0.444040,134,17.81
+titan4rec,titan4rec,ml-1m,d=64 blk=2 seg=20 mem_d=2 mem_h=2 persist=4 exp=4,362638,0.045529,0.100662,0.045172,0.099338,16,10.57
+sasrec,sasrec,ml-1m,d=64 blk=2 heads=1,331584,0.046100,0.102152,0.047826,0.106954,12,0.47
+bert4rec,bert4rec,ml-1m,d=64 blk=2 heads=2,335065,0.237771,0.430464,0.237368,0.434437,132,4.50
+mamba4rec,mamba4rec,ml-1m,d=64 blk=2 state=16 expand=2,299200,0.233273,0.427980,0.241170,0.444040,134,17.87
+titan4rec,titan4rec,ml-1m,d=64 blk=2 seg=20 mem_d=2 mem_h=2 persist=4 exp=4,362638,0.045529,0.100662,0.045172,0.099338,16,10.36
+titan4rec_memory_depth=1,titan4rec,ml-1m,d=64 blk=2 seg=20 mem_d=1 mem_h=2 persist=4 exp=4,348046,0.043639,0.097848,0.041325,0.090397,14,7.12
+titan4rec_num_persistent=0,titan4rec,ml-1m,d=64 blk=2 seg=20 mem_d=2 mem_h=2 persist=0 exp=4,362126,0.042554,0.096026,0.047598,0.102483,22,14.31
+titan4rec_segment_size=10,titan4rec,ml-1m,d=64 blk=2 seg=10 mem_d=2 mem_h=2 persist=4 exp=4,361998,0.042774,0.094702,0.043145,0.093046,12,8.62
+titan4rec_segment_size=50,titan4rec,ml-1m,d=64 blk=2 seg=50 mem_d=2 mem_h=2 persist=4 exp=4,364558,0.231433,0.427483,0.229543,0.427649,46,29.21
+titan4rec,titan4rec,ml-1m,d=64 blk=2 seg=20 mem_d=2 mem_h=2 persist=4 exp=4,362188,0.472124,0.711258,0.456049,0.691391,64,182.50

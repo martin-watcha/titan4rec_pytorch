@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+
+# Data
+data/raw/
+data/processed/
+
+# Checkpoints
+checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Binary documents
+*.pages
+
+# Jupyter
+.ipynb_checkpoints/
+
+# W&B
+wandb/
+
+# Training logs
+lightning_logs/
+logs/
