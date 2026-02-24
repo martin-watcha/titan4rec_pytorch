@@ -38,3 +38,9 @@ wandb/
 # Training logs
 lightning_logs/
 logs/
+
+# Results
+results/
+
+# Shell scripts
+*.sh
